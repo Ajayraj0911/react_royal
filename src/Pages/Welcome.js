@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Employees = () => {
+export const Welcome = () => {
     return (
         <div>
-            employees works??
+            Welcome page !!
         </div>
     )
 }
