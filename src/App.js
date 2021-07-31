@@ -1,50 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-
-const users = [
-{
-  name:"ajayraj",
-  email:"ajayraj@gmail.com",
-  age:20
-
-},
-{
-  name:"raj",
-  email:"raj@gmail.com",
-  age:21
-
-},
-{
-  name:"ajay",
-  email:"ajay@gmail.com",
-  age:22
-
-},
-]
-
-
-function UserDetails(){
-
-return(
-<div>
-      <h1>Hello World!!</h1> 
-      <h4>
-        {
-          users.map((user)=>{
-            return <p>{user.name}</p>
-          })
-        }
-      </h4>
-      </div>
-)
-}
-
-
+import Header from './MyComponents/Header';
+import {Footer}  from './MyComponents/Footer';
+import { Employee } from './MyComponents/Employee';
 
 function App() {
    
   return (
-    <h1>{UserDetails()}</h1>
+    <>
+      <Header title = "Employee Management" searchBar = {true}/>
+      <Employee/>
+      <Footer/>
+    </>
   );
 }
 
